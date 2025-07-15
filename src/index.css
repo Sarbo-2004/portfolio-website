@@ -8,35 +8,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark portfolio theme */
+    --background: 210 11% 4%;
+    --foreground: 0 0% 82%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 210 11% 7%;
+    --card-foreground: 0 0% 82%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 210 11% 7%;
+    --popover-foreground: 0 0% 82%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 152 100% 50%;
+    --primary-foreground: 210 11% 4%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 11% 15%;
+    --secondary-foreground: 0 0% 82%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 11% 10%;
+    --muted-foreground: 0 0% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 196 100% 47%;
+    --accent-foreground: 210 11% 4%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 11% 15%;
+    --input: 210 11% 10%;
+    --ring: 152 100% 50%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+    
+    /* Custom portfolio colors */
+    --neon-green: 152 100% 50%;
+    --electric-blue: 196 100% 47%;
+    --dark-base: 210 11% 4%;
+    --dark-elevated: 210 11% 7%;
+    --text-primary: 0 0% 82%;
+    --text-muted: 0 0% 60%;
+    
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 11% 4%), hsl(210 11% 7%));
+    --gradient-glow: radial-gradient(circle at center, hsl(var(--neon-green) / 0.1), transparent);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 30px hsl(var(--neon-green) / 0.3);
+    --shadow-card: 0 8px 32px hsl(210 11% 2% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +120,50 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter antialiased;
+    background: var(--gradient-hero);
+  }
+  
+  /* Custom component styles */
+  .glow-effect {
+    filter: drop-shadow(var(--shadow-glow));
+  }
+  
+  .card-hover {
+    transition: var(--transition-smooth);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: var(--shadow-card), var(--shadow-glow);
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--neon-green) / 0.5);
+  }
+  
+  .neon-border {
+    border: 1px solid hsl(var(--neon-green) / 0.3);
+    box-shadow: 0 0 20px hsl(var(--neon-green) / 0.1), inset 0 0 20px hsl(var(--neon-green) / 0.05);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-2xl font-medium transition-all duration-300;
+    @apply hover:scale-105 hover:shadow-lg;
+    box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-2xl font-medium transition-all duration-300;
+    @apply hover:scale-105 hover:bg-secondary/80;
+    border: 1px solid hsl(var(--border));
+  }
+  
+  .skill-badge {
+    @apply bg-card text-card-foreground px-4 py-2 rounded-xl text-sm font-medium transition-all duration-300;
+    @apply hover:scale-105 hover:bg-primary hover:text-primary-foreground;
+    border: 1px solid hsl(var(--border));
   }
 }
