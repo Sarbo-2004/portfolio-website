@@ -46,7 +46,7 @@ const Navigation = () => {
                 isActive('/ui-ux') ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
               }`}
             >
-              UI/UX Portfolio
+              Web and App Designs
             </Link>
             <Link 
               to="/data-ml" 
@@ -54,14 +54,14 @@ const Navigation = () => {
                 isActive('/data-ml') ? 'text-primary' : 'text-muted-foreground hover:text-foreground'
               }`}
             >
-              Data & ML
+              Machine Learning
             </Link>
           </div>
           
           {/* Social Links */}
           <div className="flex items-center space-x-4">
             <a 
-              href="https://linkedin.com/in/sarbojeet" 
+              href="www.linkedin.com/in/sarbojeet-soe-mondal-data-scientist" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -69,7 +69,7 @@ const Navigation = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="https://github.com/sarbojeet" 
+              href="https://github.com/Sarbo-2004/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"

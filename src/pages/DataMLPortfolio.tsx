@@ -1,67 +1,67 @@
 import Navigation from "@/components/Navigation";
-import { Github, ExternalLink, Code, Cpu, Database, Network, BarChart2, Linkedin } from "lucide-react";
+import { Github, ExternalLink, Laptop, Search,Activity, SearchCheck,FileText, Apple, Cpu, Network,Database, Code, Linkedin } from "lucide-react";
 
 const DataMLPortfolio = () => {
   const projects = [
     {
       id: 1,
-      title: "Sentiment Analysis",
-      description: "Built NLP model using BERT to analyze customer sentiment with 94% accuracy",
-      techStack: ["Python", "BERT", "PyTorch", "AWS"],
-      githubLink: "#",
-      demoLink: "#",
-      impact: "Improved customer satisfaction by 23%",
-      icon: <Cpu size={20} className="text-primary" />
+      title: "Laptop Price Prediction & Recommender",
+    description: "Developed ML models to predict laptop prices and recommend options using Streamlit.",
+    techStack: ["Python", "Scikit-learn", "Streamlit", "FastAPI"],
+    githubLink: "https://github.com/Sarbo-2004/Laptop-price-predictor",
+    demoLink: "https://laptop-tool.streamlit.app/",
+    impact: "Streamlined purchasing decisions by 20% through accurate recommendations.",
+    icon: <Laptop size={20} className="text-primary" />
     },
     {
       id: 2,
-      title: "Sales Forecasting",
-      description: "XGBoost pipeline for sales prediction with RMSE of 12.3",
-      techStack: ["Python", "XGBoost", "Pandas", "Scikit-learn"],
-      githubLink: "#",
-      demoLink: "#",
-      impact: "Reduced forecasting error by 35%",
-      icon: <BarChart2 size={20} className="text-primary" />
+       title: "Freelancer Lead Generation & UI/UX Audit Tool",
+    description: "AI-powered tool for freelancers using FastAPI, SerpAPI, Playwright, and Gemini for automated lead scraping and GenAI analysis.",
+    techStack: ["Python", "FastAPI", "SerpAPI", "Playwright", "Gemini API"],
+    githubLink: "https://github.com/Sarbo-2004/Freelancer_lead_tool",
+    demoLink: "#",
+    impact: "Boosted outreach efficiency by 10x through ML-driven UI/UX insights.",
+    icon: <Search size={20} className="text-primary" />
     },
     {
       id: 3,
-      title: "Medical Imaging AI",
-      description: "CNN models for detecting anomalies in X-rays with 97% precision",
-      techStack: ["TensorFlow", "Keras", "OpenCV"],
-      githubLink: "#",
-      demoLink: "#",
-      impact: "Assisted in 1000+ diagnoses",
-      icon: <Cpu size={20} className="text-primary" />
+      title: "Lung Cancer Classification",
+    description: "Built and optimized a CNN model classifying lung cancer images with 94% accuracy.",
+    techStack: ["Python", "TensorFlow", "CNN", "Deep Learning"],
+    githubLink: "https://github.com/Sarbo-2004/Lung_cancer_Detection",
+    demoLink: "#",
+    impact: "Demonstrated AI-assisted screening with high diagnostic precision.",
+    icon: <Activity size={20} className="text-primary" />
     },
     {
       id: 4,
-      title: "Recommendation System",
-      description: "Collaborative filtering engine for e-commerce platform",
-      techStack: ["Python", "TensorFlow", "NumPy"],
-      githubLink: "#",
-      demoLink: "#",
-      impact: "Increased engagement by 40%",
-      icon: <Network size={20} className="text-primary" />
+      title: "Search Relevance System and Recommendation Engine",
+    description: "Built a scalable NLP-powered product search engine combining BM25 and SBERT.",
+    techStack: ["Python", "FastAPI", "BM25", "SBERT", "Amazon Dataset"],
+    githubLink: "https://github.com/Sarbo-2004/search-relevance-system",
+    demoLink: "#",
+    impact: "Achieved highly relevant top-5 results ready for LLM query rewriting.",
+    icon: <SearchCheck size={20} className="text-primary" />,
     },
     {
       id: 5,
-      title: "Stock Prediction",
-      description: "LSTM and ARIMA models for price prediction",
-      techStack: ["Python", "LSTM", "ARIMA", "Matplotlib"],
-      githubLink: "#",
-      demoLink: "#",
-      impact: "15% improvement in accuracy",
-      icon: <BarChart2 size={20} className="text-primary" />
+      title: "Resume Personalizer",
+    description: "Automated tool that tailors resumes for specific job descriptions using NLP and keyword extraction.",
+    techStack: ["Python", "Spacy", "Streamlit", "OpenAI API"],
+    githubLink: "https://github.com/Sarbo-2004/AI-HR_assistant/tree/main/resume_personalizer",
+    demoLink: "#",
+    impact: "Reduced manual resume editing time by 80% for job applications.",
+    icon: <FileText size={20} className="text-primary" />,
     },
     {
       id: 6,
-      title: "Intelligent Chatbot",
-      description: "Transformers-based chatbot for customer service",
-      techStack: ["Python", "Transformers", "Rasa", "Flask"],
-      githubLink: "#",
-      demoLink: "#",
-      impact: "Reduced tickets by 60%",
-      icon: <Network size={20} className="text-primary" />
+      title: "Diet Recommendation System",
+    description: "AI-driven system that suggests personalized diet plans based on user health profiles.",
+    techStack: ["Python", "Pandas", "Scikit-learn", "Streamlit"],
+    githubLink: "https://github.com/Sarbo-2004/Personalized-Diet-recomomendation",
+    demoLink: "#",
+    impact: "Enhanced health plan personalization with smart recommendations.",
+    icon: <Apple size={20} className="text-primary" />,
     }
   ];
 

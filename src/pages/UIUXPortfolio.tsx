@@ -3,39 +3,40 @@ import { ExternalLink, Github, Figma, ArrowRight, Mail, Linkedin } from "lucide-
 
 const UIUXPortfolio = () => {
   const projects = [
-    {
-      id: 1,
-      title: "E-commerce App",
-      description: "Redesigned shopping experience increasing conversions by 32%",
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop",
-      tags: ["Mobile", "Figma", "UX Research"],
-      caseStudyLink: "#",
-    },
-    {
-      id: 2,
-      title: "Fitness Tracker",
-      description: "Personalized workout app with 92% user satisfaction",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=400&fit=crop",
-      tags: ["iOS", "User Testing", "Prototyping"],
-      caseStudyLink: "#",
-    },
-    {
-      id: 3,
-      title: "Finance Dashboard",
-      description: "Data visualization platform for investment analytics",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop",
-      tags: ["Web", "Data Viz", "Responsive"],
-      caseStudyLink: "#",
-    },
-    {
-      id: 4,
-      title: "Medical Portal",
-      description: "Secure patient management system for clinics",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=600&h=400&fit=crop",
-      tags: ["Healthcare", "WCAG", "Web App"],
-      caseStudyLink: "#",
-    }
-  ];
+  {
+    id: 1,
+    title: "Lawyer Consultancy Website",
+    description: "Designed and developed a responsive, SEO-friendly consultancy site for a law firm.",
+    image: "https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?q=80&w=1111&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    tags: ["Web", "Figma", "Client Project"],
+    caseStudyLink: "https://your-deployed-link.com",
+  },
+  {
+    id: 2,
+    title: "Blood Donation App UI",
+    description: "Redesigned a blood donation app interface with improved navigation and accessibility.",
+    image: "https://plus.unsplash.com/premium_photo-1685141420004-1b13a03c54ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Ymxvb2QlMjBkb25hdGlvbiUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D",
+    tags: ["Mobile", "Figma", "Healthcare", "Client Project"],
+    caseStudyLink: "https://drive.google.com/file/d/1Drvyhc_kFFxVtESFWN1Oxp_y1TQWcmpq/view?usp=sharing",
+  },
+  {
+    id: 3,
+    title: "Giftzai Chatbot UI",
+    description: "Designed a chatbot interface for personalized gift recommendations, enhancing interaction speed.",
+    image: "https://source.unsplash.com/featured/?chatbot,ui",
+    tags: ["Web", "Figma", "Chatbot", "Client Project"],
+    caseStudyLink: "https://drive.google.com/drive/folders/16gAHs9nH068lmwcOO1qUgslCzwcHjyk9?usp=sharing",
+  },
+  {
+    id: 4,
+    title: "Infosec Society Website UI",
+    description: "Designed a community website for InfoSec Society showcasing events and resources.",
+    image: "https://source.unsplash.com/featured/?cybersecurity,website",
+    tags: ["Web", "Figma", "Community", "Client Project"],
+    caseStudyLink: "https://drive.google.com/drive/folders/1KoTvbzg_Oh0BH1XISXg-nJw7Vrb4X4-R?usp=sharing",
+  }
+];
+
 
   const processSteps = [
     {
@@ -118,7 +119,7 @@ const UIUXPortfolio = () => {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
                     <a href={project.caseStudyLink} className="text-white text-sm font-medium flex items-center">
-                      Case Study <ExternalLink size={14} className="ml-1.5" />
+                      See Design <ExternalLink size={14} className="ml-1.5" />
                     </a>
                   </div>
                 </div>
