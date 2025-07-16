@@ -10,7 +10,7 @@ const DataMLPortfolio = () => {
     techStack: ["Python", "Scikit-learn", "Streamlit", "FastAPI"],
     githubLink: "https://github.com/Sarbo-2004/Laptop-price-predictor",
     demoLink: "https://laptop-tool.streamlit.app/",
-    impact: "Streamlined purchasing decisions by 20% through accurate recommendations.",
+    impact: "Streamlined purchasing decisions through accurate recommendations.",
     icon: <Laptop size={20} className="text-primary" />
     },
     {
@@ -20,7 +20,7 @@ const DataMLPortfolio = () => {
     techStack: ["Python", "FastAPI", "SerpAPI", "Playwright", "Gemini API"],
     githubLink: "https://github.com/Sarbo-2004/Freelancer_lead_tool",
     demoLink: "#",
-    impact: "Boosted outreach efficiency by 10x through ML-driven UI/UX insights.",
+    impact: "Boosted outreach efficiency through ML-driven and GEN-AI UI/UX insights.",
     icon: <Search size={20} className="text-primary" />
     },
     {
@@ -50,7 +50,7 @@ const DataMLPortfolio = () => {
     techStack: ["Python", "Spacy", "Streamlit", "OpenAI API"],
     githubLink: "https://github.com/Sarbo-2004/AI-HR_assistant/tree/main/resume_personalizer",
     demoLink: "#",
-    impact: "Reduced manual resume editing time by 80% for job applications.",
+    impact: "Reduced manual resume editing time for job applications.",
     icon: <FileText size={20} className="text-primary" />,
     },
     {
