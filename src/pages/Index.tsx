@@ -6,15 +6,16 @@ import profileImage from "@/assets/profile.jpg";
 
 const Index = () => {
   const skills = [
+    "Figma",
+    "Wireframing",
     "UI Design",
     "UX Design",
     "NLP",
     "Python",
-    "Figma",
     "TensorFlow",
     "Deep Learning",
     "Machine Learning",
-    "Wireframing & Prototyping",
+    
   ];
 
   return (
