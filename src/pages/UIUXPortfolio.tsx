@@ -63,7 +63,7 @@ const UIUXPortfolio = () => {
 
   const testimonials = [
     {
-  quote: "Very professional and good designing. Sarbojeet kept it simple and sober while meeting all our requirements.",
+  quote: "Very professional and good designing. Sarbojeet kept it simple and sober while meeting all my requirements.",
   author: "Rajan Dasgupta",
   role: "Lawyer",
   avatar: "https://randomuser.me/api/portraits/men/4.jpg"
