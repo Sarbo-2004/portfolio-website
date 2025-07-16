@@ -90,7 +90,7 @@ const Index = () => {
               <h3 className="text-xl font-semibold font-poppins mb-8 text-center text-glow">Skills & Expertise</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {skills.map((skill, index) => (
-                  <div key={skill} className="skill-badge text-center animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <div key={skill} className="skill-badge text-center items-center justify content animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
                     {skill}
                   </div>
                 ))}

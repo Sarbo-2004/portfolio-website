@@ -63,23 +63,23 @@ const UIUXPortfolio = () => {
 
   const testimonials = [
     {
-      quote: "Sarbojeet's redesign increased our conversion rate by 32% while improving our NPS score. His attention to detail is exceptional.",
-      author: "Sarah Johnson",
-      role: "Product Lead at TechCorp",
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg"
+  quote: "Very professional and good designing. Sarbojeet kept it simple and sober while meeting all our requirements.",
+  author: "Rajan Dasgupta",
+  role: "Lawyer",
+  avatar: "https://randomuser.me/api/portraits/men/4.jpg"
     },
-    {
-      quote: "He transformed our complex requirements into an intuitive interface that our customers love. The onboarding completion rate improved by 45%.",
-      author: "Michael Chen",
-      role: "CEO at FinStart",
-      avatar: "https://randomuser.me/api/portraits/men/32.jpg"
-    },
-    {
-      quote: "Working with Sarbojeet was seamless. His designs reduced our support tickets by 28% and improved task completion times.",
-      author: "David Wilson",
-      role: "UX Manager at HealthPlus",
-      avatar: "https://randomuser.me/api/portraits/men/45.jpg"
-    }
+    // {
+    //   quote: "He transformed our complex requirements into an intuitive interface that our customers love. The onboarding completion rate improved by 45%.",
+    //   author: "Michael Chen",
+    //   role: "CEO at FinStart",
+    //   avatar: "https://randomuser.me/api/portraits/men/32.jpg"
+    // },
+    // {
+    //   quote: "Working with Sarbojeet was seamless. His designs reduced our support tickets by 28% and improved task completion times.",
+    //   author: "David Wilson",
+    //   role: "UX Manager at HealthPlus",
+    //   avatar: "https://randomuser.me/api/portraits/men/45.jpg"
+    // }
   ];
 
   return (
@@ -156,7 +156,7 @@ const UIUXPortfolio = () => {
         </section>
 
         {/* Testimonials */}
-        {/* <section className="mb-16">
+        <section className="mb-16">
           <h2 className="text-xl font-semibold mb-6 pb-2 border-b border-border">Client Feedback</h2>
           <div className="grid md:grid-cols-3 gap-5">
             {testimonials.map((testimonial, index) => (
@@ -181,7 +181,7 @@ const UIUXPortfolio = () => {
               </div>
             ))}
           </div>
-        </section> */}
+        </section>
 
         {/* Contact */}
         <section id="contact" className="bg-card rounded-xl p-6 md:p-8 border border-border">
