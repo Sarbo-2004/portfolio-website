@@ -9,7 +9,7 @@ const UIUXPortfolio = () => {
     description: "Designed and developed a responsive, SEO-friendly consultancy site for a law firm.",
     image: "https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?q=80&w=1111&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["Web", "Figma", "Client Project"],
-    caseStudyLink: "https://your-deployed-link.com",
+    caseStudyLink: "https://samplewebsiterajandasgupta.vercel.app/",
   },
   {
     id: 2,
