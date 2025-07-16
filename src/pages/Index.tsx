@@ -6,15 +6,15 @@ import profileImage from "@/assets/profile.jpg";
 
 const Index = () => {
   const skills = [
-    "UI/UX Design",
-    "Wireframes & Prototypes",
-    "Machine Learning",
     "NLP",
     "Python",
     "Figma",
     "TensorFlow",
+    "UI/UX Design",
+    "Machine Learning",
     "Data Science",
     "Deep Learning",
+    "Wireframing",
   ];
 
   return (
@@ -87,10 +87,10 @@ const Index = () => {
               </div>
             </div>
             <div className="animate-fade-in">
-              <h3 className="text-xl font-semibold font-poppins mb-8 text-center text-glow">Skills & Expertise</h3>
+              <h3 className="text-xl font-semibold font-poppins mb-8 items-center justify-center text-center text-glow">Skills & Expertise</h3>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {skills.map((skill, index) => (
-                  <div key={skill} className="skill-badge text-center items-center justify content animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
+                  <div key={skill} className="skill-badge text-center animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>
                     {skill}
                   </div>
                 ))}
