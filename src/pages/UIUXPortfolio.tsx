@@ -3,16 +3,28 @@ import { ExternalLink, Github, Figma, ArrowRight, Mail, Linkedin } from "lucide-
 
 const UIUXPortfolio = () => {
   const projects = [
+    {
+  id: 1,
+  title: "Luxurior Interior Design Studio",
+  description:
+    "Developed a luxurious website for an interior design studio featuring smooth parallax scrolling, elegant layouts, and a minimal yet rich user experience tailored to reflect the brand's premium aesthetics.",
+  image:
+    "https://plus.unsplash.com/premium_photo-1746888841255-42d2452f6ebe?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  tags: ["Web Design", "Parallax", "Luxury Brand", "Client Project"],
+  caseStudyLink:
+    "https://luxe-parallax-studio.vercel.app/",
+},
   {
-    id: 1,
+    id: 2,
     title: "Lawyer Consultancy Website",
     description: "Designed and developed a responsive, SEO-friendly consultancy site for a law firm.",
     image: "https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?q=80&w=1111&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     tags: ["Web", "Figma", "Client Project"],
     caseStudyLink: "https://samplewebsiterajandasgupta.vercel.app/",
   },
+  
   {
-    id: 2,
+    id: 3,
     title: "Blood Donation App UI",
     description: "Redesigned a blood donation app interface with improved navigation and accessibility.",
     image: "https://plus.unsplash.com/premium_photo-1682309704250-6bac0f499665?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Ymxvb2QlMjBkb25hdGlvbnxlbnwwfHwwfHx8MA%3D%3D",
@@ -20,7 +32,7 @@ const UIUXPortfolio = () => {
     caseStudyLink: "https://drive.google.com/drive/folders/16gAHs9nH068lmwcOO1qUgslCzwcHjyk9?usp=drive_link",
   },
   {
-    id: 3,
+    id: 4,
     title: "Giftzai Chatbot UI",
     description: "Designed a chatbot interface for personalized gift recommendations, enhancing interaction speed.",
     image: "https://plus.unsplash.com/premium_photo-1661331935029-a5ed25ea608b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z2lmdHN8ZW58MHx8MHx8fDA%3D",
@@ -28,7 +40,7 @@ const UIUXPortfolio = () => {
     caseStudyLink: "https://drive.google.com/file/d/1gyiDRdaBhQ9BVyNnOOL2z6dLv6pyZQlN/view?usp=drive_link",
   },
   {
-    id: 4,
+    id: 5,
     title: "Infosec Society Website UI",
     description: "Designed a community website for InfoSec Society showcasing events and resources.",
     image: "https://cdn.pixabay.com/photo/2020/08/20/05/23/neon-5502633_1280.jpg",
