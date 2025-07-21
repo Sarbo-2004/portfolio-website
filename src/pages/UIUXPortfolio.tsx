@@ -156,7 +156,7 @@ const UIUXPortfolio = () => {
         </section>
 
         {/* Testimonials */}
-        <section className="mb-16">
+        {/* <section className="mb-16">
           <h2 className="text-xl font-semibold mb-6 pb-2 border-b border-border">Client Feedback</h2>
           <div className="grid md:grid-cols-3 gap-5">
             {testimonials.map((testimonial, index) => (
@@ -181,7 +181,7 @@ const UIUXPortfolio = () => {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Contact */}
         <section id="contact" className="bg-card rounded-xl p-6 md:p-8 border border-border">

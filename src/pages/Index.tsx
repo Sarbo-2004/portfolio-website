@@ -17,6 +17,26 @@ const Index = () => {
     "Machine Learning",
     
   ];
+  const testimonials = [
+    {
+  quote: "Very professional and good designing. Sarbojeet kept it simple and sober while meeting all my requirements.",
+  author: "Rajan Dasgupta",
+  role: "Lawyer",
+  avatar: "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    // {
+    //   quote: "He transformed our complex requirements into an intuitive interface that our customers love. The onboarding completion rate improved by 45%.",
+    //   author: "Michael Chen",
+    //   role: "CEO at FinStart",
+    //   avatar: "https://randomuser.me/api/portraits/men/32.jpg"
+    // },
+    // {
+    //   quote: "Working with Sarbojeet was seamless. His designs reduced our support tickets by 28% and improved task completion times.",
+    //   author: "David Wilson",
+    //   role: "UX Manager at HealthPlus",
+    //   avatar: "https://randomuser.me/api/portraits/men/45.jpg"
+    // }
+  ];
 
   return (
     <div className="min-h-screen bg-background">
@@ -100,6 +120,38 @@ const Index = () => {
           </div>
         </div>
       </section>
+      <section className="py-20 bg-card/5 px-6">
+  <div className="container mx-auto max-w-7xl">
+    <h2 className="text-2xl font-bold font-poppins mb-4 text-glow">
+      Feedback on my work
+    </h2>
+
+    <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+      {testimonials.map((testimonial, index) => (
+        <div
+          key={index}
+          className="bg-card px-6 py-6 rounded-2xl border border-border shadow-md h-full transform transition-all duration-300 hover:shadow-xl hover:-translate-y-1 hover:scale-[1.02]"
+        >
+          <div className="flex items-center gap-4 mb-4">
+            <img
+              src={testimonial.avatar}
+              alt={testimonial.author}
+              className="w-12 h-12 rounded-full object-cover border-2 border-primary/30"
+            />
+            <div>
+              <p className="font-semibold text-base text-foreground">{testimonial.author}</p>
+              <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+            </div>
+          </div>
+          <p className="text-muted-foreground italic leading-relaxed text-base">
+            “{testimonial.quote}”
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section className="py-20 px-6 bg-card/10">
