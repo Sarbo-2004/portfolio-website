@@ -22,7 +22,7 @@ const Navigation = () => {
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-primary rounded-full animate-glow-pulse"></div>
             </div>
             <div>
-              <h2 className="font-poppins font-semibold text-foreground">Sarbojeet Mondal</h2>
+              <h2 className="font-poppins font-semibold text-foreground">Sarbojeet Soe Mondal</h2>
               <div className="flex items-center space-x-1">
                 <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                 <span className="text-xs text-muted-foreground">Available for work</span>
