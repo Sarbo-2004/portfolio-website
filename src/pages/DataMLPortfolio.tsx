@@ -1,40 +1,21 @@
 import Navigation from "@/components/Navigation";
-import { Github, ExternalLink, Laptop, Search,Activity, SearchCheck,FileText, Apple, Cpu, Network,Database, Code, Linkedin } from "lucide-react";
+import { Github, ExternalLink, Laptop, Search,Activity, SearchCheck,FileText, Apple, Cpu, Network,Database, Code, Linkedin, Sparkles } from "lucide-react";
 
 const DataMLPortfolio = () => {
   const projects = [
     {
-      id: 1,
-      title: "Laptop Price Prediction & Recommender",
-    description: "Developed ML models to predict laptop prices and recommend options using Streamlit.",
-    techStack: ["Python", "Scikit-learn", "Streamlit", "FastAPI"],
-    githubLink: "https://github.com/Sarbo-2004/Laptop-price-predictor",
-    demoLink: "https://laptop-tool.streamlit.app/",
-    impact: "Streamlined purchasing decisions through accurate recommendations.",
-    icon: <Laptop size={20} className="text-primary" />
-    },
+  id: 1,
+  title: "YouTube-Style Personalized Recommendation System",
+  description: "Engineered a multi-stage recommendation engine using softmax-based candidate generation and user watch history.",
+  techStack: ["Python", "Flask", "TensorFlow", "Softmax", "Amazon Dataset"],
+  githubLink: "https://github.com/Sarbo-2004/Personalised-recommendation-feed-system", // Replace if needed
+  demoLink: "#", // Update if a live demo is available
+  impact: "Delivered personalized top-N recommendations using cold-started watch sessions and deep learning.",
+  icon: <Sparkles size={20} className="text-primary" />,
+},
+    
     {
       id: 2,
-       title: "Freelancer Lead Generation & UI/UX Audit Tool",
-    description: "AI-powered tool for freelancers using FastAPI, SerpAPI, Playwright, and Gemini for automated lead scraping and GenAI analysis.",
-    techStack: ["Python", "FastAPI", "SerpAPI", "Playwright", "Gemini API"],
-    githubLink: "https://github.com/Sarbo-2004/Freelancer_lead_tool",
-    demoLink: "#",
-    impact: "Boosted outreach efficiency through ML-driven and GEN-AI UI/UX insights.",
-    icon: <Search size={20} className="text-primary" />
-    },
-    {
-      id: 3,
-      title: "Lung Cancer Classification",
-    description: "Built and optimized a CNN model classifying lung cancer images with 94% accuracy.",
-    techStack: ["Python", "TensorFlow", "CNN", "Deep Learning"],
-    githubLink: "https://github.com/Sarbo-2004/Lung_cancer_Detection",
-    demoLink: "#",
-    impact: "Demonstrated AI-assisted screening with high diagnostic precision.",
-    icon: <Activity size={20} className="text-primary" />
-    },
-    {
-      id: 4,
       title: "Search Relevance System and Recommendation Engine",
     description: "Built a scalable NLP-powered product search engine combining BM25 and SBERT.",
     techStack: ["Python", "FastAPI", "BM25", "SBERT", "Amazon Dataset"],
@@ -44,7 +25,38 @@ const DataMLPortfolio = () => {
     icon: <SearchCheck size={20} className="text-primary" />,
     },
     {
+      id: 3,
+      title: "Laptop Price Prediction & Recommender",
+    description: "Developed ML models to predict laptop prices and recommend options using Streamlit.",
+    techStack: ["Python", "Scikit-learn", "Streamlit", "FastAPI"],
+    githubLink: "https://github.com/Sarbo-2004/Laptop-price-predictor",
+    demoLink: "https://laptop-tool.streamlit.app/",
+    impact: "Streamlined purchasing decisions through accurate recommendations.",
+    icon: <Laptop size={20} className="text-primary" />
+    },
+    {
+      id: 4,
+       title: "Freelancer Lead Generation & UI/UX Audit Tool",
+    description: "AI-powered tool for freelancers using FastAPI, SerpAPI, Playwright, and Gemini for automated lead scraping and GenAI analysis.",
+    techStack: ["Python", "FastAPI", "SerpAPI", "Playwright", "Gemini API"],
+    githubLink: "https://github.com/Sarbo-2004/Freelancer_lead_tool",
+    demoLink: "#",
+    impact: "Boosted outreach efficiency through ML-driven and GEN-AI UI/UX insights.",
+    icon: <Search size={20} className="text-primary" />
+    },
+    {
       id: 5,
+      title: "Lung Cancer Classification",
+    description: "Built and optimized a CNN model classifying lung cancer images with 94% accuracy.",
+    techStack: ["Python", "TensorFlow", "CNN", "Deep Learning"],
+    githubLink: "https://github.com/Sarbo-2004/Lung_cancer_Detection",
+    demoLink: "#",
+    impact: "Demonstrated AI-assisted screening with high diagnostic precision.",
+    icon: <Activity size={20} className="text-primary" />
+    },
+    
+    {
+      id: 6,
       title: "Resume Personalizer",
     description: "Automated tool that tailors resumes for specific job descriptions using NLP and keyword extraction.",
     techStack: ["Python", "Spacy", "Streamlit", "OpenAI API"],
@@ -54,7 +66,7 @@ const DataMLPortfolio = () => {
     icon: <FileText size={20} className="text-primary" />,
     },
     {
-      id: 6,
+      id: 7,
       title: "Diet Recommendation System",
     description: "AI-driven system that suggests personalized diet plans based on user health profiles.",
     techStack: ["Python", "Pandas", "Scikit-learn", "Streamlit"],
